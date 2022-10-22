@@ -1,0 +1,60 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="push" [(opened)]="opened" >
+        <mat-list-item>Menu</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list>
+            <mat-list-item><a mat-button [routerLink]="'notes'">Notes Cours</a></mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item><a mat-button >Notes TD</a></mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item><a mat-button>Notes TP</a></mat-list-item>
+        </mat-list>
+    </mat-sidenav>
+    
+    <mat-sidenav-content >
+        <div class="home-buttons" *ngIf="router.url !== '/login'" style="position: fixed;">
+            <div class="button-container">
+                <button mat-mini-fab matTooltip="HOME" color="primary" [routerLink]="'/modules'">
+                    <mat-icon fontIcon="home"></mat-icon>
+                </button>
+            </div>
+                <br>
+            <div class="button-container">
+                <button mat-mini-fab color="primary" matTooltip="MENU" (click)="opened=!opened">
+                    <mat-icon>arrow_right_alt</mat-icon>
+                </button>
+            </div>
+            <br>
+            <div class="button-container">
+                <button mat-mini-fab color="primary" matTooltip="ADD NOTE" [routerLink]="'/seance'">
+                    <mat-icon>note_add</mat-icon>
+                </button>
+            </div>
+           
+            
+        <br>
+        </div>
+        <div class="annee" *ngIf="router.url === '/modules' || router.url === '/admin/home'">
+            <mat-form-field appearance="fill">
+                <mat-label>Année scolaire</mat-label>
+                <mat-select [(value)]="selected">
+                  <mat-option value="option1">2022 / 2023</mat-option>
+                  <mat-option value="option2">2021 / 2022</mat-option>
+                  <mat-option value="option3">2020 / 2021</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+       
+          
+        
+        
+        <router-outlet></router-outlet>
+        
+        
+    </mat-sidenav-content>
+   
+</mat-sidenav-container>
+    
+
+
+

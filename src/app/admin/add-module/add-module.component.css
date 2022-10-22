@@ -1,0 +1,28 @@
+.outset{
+    border-style: outset;
+    width: 800px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkbox-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;  
+    gap: 20px;
+    margin: 20px;
+}

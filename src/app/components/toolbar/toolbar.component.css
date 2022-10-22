@@ -1,0 +1,18 @@
+.spacer {
+    flex: 1 auto;
+  }
+
+.example-form {
+margin-top: 15px;
+margin-right: 10px;
+min-width: 150px;
+max-width: 200px;
+width: 100%;
+font-size: 12px;
+}
+
+.example-full-width {
+width: 100%;
+
+}
+

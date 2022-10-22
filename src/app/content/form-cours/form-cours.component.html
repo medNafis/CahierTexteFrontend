@@ -1,0 +1,92 @@
+<div class="container">
+    <div class="outset">
+        <h1 style="font-weight: bold; text-align: center;
+            margin-top: 10px;">Séance :</h1>
+            <br>
+            <div class="form-container">
+                <form action="" id="form">
+                    <label for="date">Date :</label>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Choose a date</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-hint>MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field> 
+                    <br>        
+                    <br>         
+                    <label for="seance">Créneau :</label>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Créneau</mat-label>
+                        <mat-select>
+                        <mat-option value="one">8h30 - 10h</mat-option>
+                        <mat-option value="two">10h15 - 11h45</mat-option>
+                        <mat-option value="one">14h30 - 16h</mat-option>
+                        <mat-option value="two">16h15 - 17h45</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <br>
+                    <br>
+                    <label for="module">Module :</label>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Module</mat-label>
+                        <mat-select>
+                        <mat-option value="one">Informatique Industrielle</mat-option>
+                        <mat-option value="two">JEE</mat-option>
+                        <mat-option value="three">POO</mat-option>
+                        <mat-option value="four">Machine Learning</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <br>
+                    <br>
+                    <label for="nature">Nature :</label>
+                
+                    <div class="checkbox-container">
+                        <mat-checkbox labelPosition="before">
+                            Cours
+                        </mat-checkbox>
+                        <mat-checkbox labelPosition="before">
+                            TP
+                        </mat-checkbox>
+                        <mat-checkbox labelPosition="before">
+                            TD
+                        </mat-checkbox>
+                    </div>
+                    <br>
+                    <br>
+                    <label for="description">Description :</label>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        
+                        <mat-label>Description</mat-label>
+                        <textarea matInput></textarea>
+                    </mat-form-field>
+                    <br>
+                    <br>
+                    <label for="progres">Progression :</label>
+                    <br>
+                    <mat-slider
+                        thumbLabel
+                        [displayWith]="formatLabel"
+                        tickInterval="1000"
+                        step="1000"
+                        min="0"
+                        max="100000"
+                        aria-label="units"></mat-slider>  
+                        <br>
+                       
+                </form>
+                
+            </div>
+            <div class="buttons">
+                <button mat-raised-button color="basic" [routerLink]="'/modules'">
+                    Annuler</button>
+                <button type="submit" form="form" mat-raised-button color="primary">
+                    Enregistrer</button>
+            </div>
+             
+    </div>         
+</div>         

@@ -1,0 +1,40 @@
+mat-card {
+    max-height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+mat-button{
+    font-size: small;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 100px;
+
+}
+.outset{
+    border-style: outset;
+    width: 1200px;
+    height: 500px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+table{
+    width: 100%;
+}

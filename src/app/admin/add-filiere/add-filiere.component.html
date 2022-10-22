@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="outset">
+        <h1 style="font-weight: bold; text-align: center;
+            margin-top: 10px;">Nouvelle Filière :</h1>
+            <br>
+            <div class="form-container">
+                <form action="" id="form">        
+                    <label for="seance">Département :</label>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Département</mat-label>
+                        <mat-select>
+                        <mat-option value="one">FSI</mat-option>
+                        <mat-option value="two">FBS</mat-option>
+                        <mat-option value="one">Architecture et Bâtiments</mat-option>
+                        <mat-option value="two">Prépas ecs-ect</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <br>
+                    <br>
+                    <label for="description">Filière :</label>
+                    <br>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Nom Filière</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <br>
+                       
+                </form>
+                
+            </div>
+            <div class="buttons">
+                <button mat-raised-button color="basic" [routerLink]="'/admin/home'">
+                    Annuler</button>
+                <button type="submit" form="form" mat-raised-button color="primary">
+                    Ajouter</button>
+            </div>
+             
+    </div>         
+</div>         

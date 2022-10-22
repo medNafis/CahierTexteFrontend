@@ -1,0 +1,37 @@
+mat-card {
+    max-height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+mat-button{
+    font-size: small;
+}
+
+mat-card-actions{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin: 100px;
+
+}
+.outset{
+    border-style: outset;
+    width: 1200px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,30 @@
+
+mat-sidenav-container{
+    height: 90%;
+    
+}
+
+mat-sidenav, mat-sidenav-content{
+    padding: 16px;
+}
+
+mat-sidenav {
+    background-color: #25316D;
+    width: 200px;
+}
+
+.home-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    width: 120px
+}
+
+.annee{
+    display: flex;
+    justify-content: center;
+}
